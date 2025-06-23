@@ -37,7 +37,7 @@ application {
 
 test {
     useJUnitPlatform()
-
+    ignoreFailures false
     testLogging {
         events ("passed", "skipped", "failed")
         showExceptions true

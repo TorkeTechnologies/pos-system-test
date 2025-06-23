@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeAll;
 // Sortieren Sie Ihre Tests sinnvoll in Klassen ein, die sich mit ähnlichen Tests beschäftigen. Denken Sie an
 // Kohäsion aus SWT. Gradle erkennt alle Klassen automatisch. Wenn Sie eine neue Klasse mit Tests erstellen,
 // müssen Sie nichts weiter machen, außer die Tests laufen zu lassen.
-class AnotherDemoTestSuite {
+class DemoTestSuite {
 
     @BeforeAll
     static void setupDatabase() {
@@ -29,7 +29,7 @@ class AnotherDemoTestSuite {
         Product product = ProductDatabase.getProductById(0);
 
         // Sie können assert oder die JUnit assert-Familie (assertEquals, ...) verwenden.
-        assert product.getId() == 0;
+        assert product.getId() != 0;
     }
 
     @Test
