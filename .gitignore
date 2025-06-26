@@ -37,3 +37,6 @@ local.properties
 
 # Include POS Jar
 !app/libs/pos.jar
+
+# Include Wrapper Gradle
+!gradle/wrapper/gradle-wrapper.jar
